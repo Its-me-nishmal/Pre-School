@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form with Background Image</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <style>
+    body {
+      background-image: url('./img/co.jpg');
+      background-size: cover;
+    }
+
+    .contact-info-container, .contact-form-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px 20px 45px 20px;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light me-auto">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Our Teachers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./faq.html">Faq</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success me-2" type="button" > <a id="ab" href="contact.html">Contact Now</a></button>
+      </div>
+    </div>
+  </nav>
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="contact-info-container">
+        <h1>Contact Us</h1>
+        <p>
+          Please fill out the form below to get in touch with us. We'll get back to you as soon as possible.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="contact-form-container">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile</label>
+            <input type="tel" class="form-control" id="mobile" name="mobile" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+            <button type="submit" class="btn btn-primary float-end" id="submit-button">Send</button></form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close">&times;</span>
+    <p>currently not responding</p>
+  </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="new.js"></script>
+
+</body>
+</html>
